@@ -37,7 +37,7 @@ class AnswerBot extends ActivityHandler {
                     case 'hello':
                     case 'hi':
                     case 'echo':
-                        await context.sendActivity({ text : `You said : "${ context.activity.text }"`, channelData:{ zohosalesiq:{ replies :[ ` |:| channelData : ` + JSON.stringify(context.activity.channelData)], suggestions:['hello', 'hi', 'widgets', 'waterfall',
+                        await context.sendActivity({ text : `new BRANCH | You said : "${ context.activity.text }"`, channelData:{ zohosalesiq:{ replies :[ ` |:| channelData : ` + JSON.stringify(context.activity.channelData)], suggestions:['hello', 'hi', 'widgets', 'waterfall',
                             'hero', 'adaptive', 'animation', 'audio', 'receipt', 'signin', 'thumbnail', 'video', 'sugg', 'suggcarousel', 'carousel',
                             'siq date time', 'siq time', 'siq loc', 'siq range cal', 'siq cal', 'siq range slider', 'siq slider', 'siq multiselect', 'siq singleselect', 'siq like', 'siq star', 'siq happy',
                             'siq article', 'siq image', 'siq link',
