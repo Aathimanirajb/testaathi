@@ -37,7 +37,7 @@ class AnswerBot extends ActivityHandler {
                     case 'hello':
                     case 'hi':
                     case 'echo':
-                        await context.sendActivity({ text : `new BRANCH | You said : "${ context.activity.text }"`, channelData:{ zohosalesiq:{ replies :[ ` |:| channelData : ` + JSON.stringify(context.activity.channelData)], suggestions:['hello', 'hi', 'widgets', 'waterfall',
+                        await context.sendActivity({ text : `You said : "${ context.activity.text }"`, channelData:{ zohosalesiq:{ replies :[ ` |:| channelData : ` + JSON.stringify(context.activity.channelData)], suggestions:['hello', 'hi', 'widgets', 'waterfall',
                             'hero', 'adaptive', 'animation', 'audio', 'receipt', 'signin', 'thumbnail', 'video', 'sugg', 'suggcarousel', 'carousel',
                             'siq date time', 'siq time', 'siq loc', 'siq range cal', 'siq cal', 'siq range slider', 'siq slider', 'siq multiselect', 'siq singleselect', 'siq like', 'siq star', 'siq happy',
                             'siq article', 'siq image', 'siq link',
@@ -60,7 +60,7 @@ class AnswerBot extends ActivityHandler {
                         else
                         {
                             //calling exteran services
-                            // this.callingExternalservice(context);
+                             this.callingExternalservice(context);
                             var isanssend = false;//qna.getAnsfromQnA(context);
                             if(!isanssend)
                             {
@@ -105,7 +105,7 @@ class AnswerBot extends ActivityHandler {
 
     callingExternalservice(context)
     {
-        var url = 'https://webhook.site/eaebe3cb-e3a8-4307-bc66-104695be5141';
+        var url = 'https://webhook.site/78f1624b-8d92-4b38-839f-3718c88d1400';
         var text = context.activity.text;
         var _body = JSON.stringify([{ 'Text': text }])
         return fetch(url, {
