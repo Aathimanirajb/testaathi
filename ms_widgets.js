@@ -20,7 +20,9 @@ const siqwidgetformat = {
                 "image": "http://zylker.com/help/common.png",
                 "title": "Articles about discount in home needs",
                 "articles": [
-                  '21853000003569201','21853000003708407','21853000003812063','21853000004456031','21853000004824041','21853000004823079','21853000004843215','21853000004899033','309901000002347005','309901000002347005','309901000003318015'
+                  '21853000003569201','21853000003708407','21853000003812063','21853000004456031','21853000004824041',
+                    '21853000004823079','21853000004843215','21853000004899033','309901000002347005',
+                    '309901000002347005','309901000003318015'
                 ]
               }
             ]
@@ -236,6 +238,13 @@ const siqwidgetformat = {
             "replies":["forwading ..."]
         }
     },
+    forwardtooperator:{
+        "zohosalesiq": {
+            "action" : "forward",
+            "operators":{"aathimaniraj.b@zohocorp.com"},
+            "replies":["forwading ..."]
+        }
+    },
     end:{
         "zohosalesiq": {
             "action" : "end",
@@ -343,6 +352,10 @@ class MSWidgets extends ActivityHandler {
             case 'siq fwd':
                 await context.sendActivity({ channelData: siqwidgetformat.forward });
                 break;
+           case 'siq fwdtoop':
+                await context.sendActivity({ channelData: siqwidgetformat.forwardtooperator });
+                break;
+                
             case 'siq end':
                 await context.sendActivity({ channelData: siqwidgetformat.end });
                 break;
