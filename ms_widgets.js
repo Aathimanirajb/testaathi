@@ -238,13 +238,13 @@ const siqwidgetformat = {
             "replies":["forwading ..."]
         }
     },
-    forwardtooperator:{
-        "zohosalesiq": {
-            "action" : "forward",
-            "operators":{"aathimaniraj.b@zohocorp.com"},
-            "replies":["forwading ..."]
-        }
-    },
+//     forwardtooperator:{
+//         "zohosalesiq": {
+//             "action" : "forward",
+//             "operators":{"aathimaniraj.b@zohocorp.com"},
+//             "replies":["forwading ..."]
+//         }
+//     },
     end:{
         "zohosalesiq": {
             "action" : "end",
