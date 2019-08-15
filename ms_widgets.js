@@ -352,9 +352,9 @@ class MSWidgets extends ActivityHandler {
             case 'siq fwd':
                 await context.sendActivity({ channelData: siqwidgetformat.forward });
                 break;
-           case 'siq fwdtoop':
-                await context.sendActivity({ channelData: siqwidgetformat.forwardtooperator });
-                break;
+//            case 'siq fwdtoop':
+//                 await context.sendActivity({ channelData: siqwidgetformat.forwardtooperator });
+//                 break;
                 
             case 'siq end':
                 await context.sendActivity({ channelData: siqwidgetformat.end });
