@@ -238,13 +238,13 @@ const siqwidgetformat = {
             "replies":["forwading ..."]
         }
     },
-//     forwardtooperator:{
-//         "zohosalesiq": {
-//             "action" : "forward",
-//             "operators":{"aathimaniraj.b@zohocorp.com"},
-//             "replies":["forwading ..."]
-//         }
-//     },
+    forwardtooperator:{
+        "zohosalesiq": {
+            "action" : "forward",
+            "operators":["aathimaniraj.b@zohocorp.com"],
+            "replies":["forwading ..."]
+        }
+    },
     end:{
         "zohosalesiq": {
             "action" : "end",
@@ -352,9 +352,9 @@ class MSWidgets extends ActivityHandler {
             case 'siq fwd':
                 await context.sendActivity({ channelData: siqwidgetformat.forward });
                 break;
-//            case 'siq fwdtoop':
-//                 await context.sendActivity({ channelData: siqwidgetformat.forwardtooperator });
-//                 break;
+           case 'siq fwdtoop':
+                await context.sendActivity({ channelData: siqwidgetformat.forwardtooperator });
+                break;
                 
             case 'siq end':
                 await context.sendActivity({ channelData: siqwidgetformat.end });
