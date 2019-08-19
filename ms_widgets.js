@@ -243,7 +243,7 @@ const siqwidgetformat = {
     forwardtooperator:{
         "zohosalesiq": {
             "action" : "forward",
-            "operators":["aathimaniraj.b@zohocorp.com"],
+            "operators":["aathimaniraj.b564566@zohocorp.com"],
             "replies":["forwading ..."]
         }
     },
