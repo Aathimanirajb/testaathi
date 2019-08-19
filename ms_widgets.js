@@ -53,7 +53,7 @@ const siqwidgetformat = {
         "zohosalesiq": {
             "input": {
              "type": "happiness-rating",
-             "level": "3"
+             "level": "8"
            },
            "replies":[{
                "text" : "Gotcha Pork Roast",
@@ -65,7 +65,7 @@ const siqwidgetformat = {
         "zohosalesiq": {
             "input": {
               "type": "star-rating",
-              "level": "5"
+              "level": "15"
             },
             "replies":[{
                 "text" : "Ratatouille",
