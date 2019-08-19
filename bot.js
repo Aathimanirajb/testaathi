@@ -71,7 +71,7 @@ class AnswerBot extends ActivityHandler {
 //                             {
 //                                 await dialog.run(context, dialogState);
 //                             }
-                             await context.sendActivity({ text :"sorry man | context :"+JSON.stringify(context.activity)});
+                             await context.sendActivity({ text :"sorry man"});
                         }
                 }
             }
