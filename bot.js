@@ -59,13 +59,14 @@ class AnswerBot extends ActivityHandler {
                         }
                         else
                         {
-                            //calling exteran services
-                             //this.callingExternalservice(context);
-                            var isanssend = false;//qna.getAnsfromQnA(context);
-                            if(!isanssend)
-                            {
-                                await dialog.run(context, dialogState);
-                            }
+//                             //calling exteran services
+//                              //this.callingExternalservice(context);
+//                             var isanssend = false;//qna.getAnsfromQnA(context);
+//                             if(!isanssend)
+//                             {
+//                                 await dialog.run(context, dialogState);
+//                             }
+                             await context.sendActivity({ text :"sorry man"});
                         }
                 }
             }
