@@ -51,6 +51,11 @@ class AnswerBot extends ActivityHandler {
                     case 'waterfall':
                         await dialog.run(context, dialogState);
                         break;
+                    case 'File Uploaded Successfully':
+                await context.sendActivity(` Name : '${ context.activity.attachments[0].name }'`);
+                await context.sendActivity(`contentType : '${ context.activity.attachments[0].contentType }'`);
+                await context.sendActivity(`contentUrl : '${ context.activity.attachments[0].contentUrl }'`);
+                        break;
                     default:
                         // await context.sendActivity(`type *intro * waterfall`);
                         if(WIDGETS.indexOf(text) > -1)
