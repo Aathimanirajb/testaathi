@@ -156,7 +156,7 @@ const siqwidgetformat = {
               "from": "-5",
               "time": true,
               "type": "calendar",
-              "label": "Schedule a meeting",
+              "label":"Bokok slotBokok slotBokok slotBokok slot",
               "select_label": "Choose a slot"
             },
             "replies":["cal"]
