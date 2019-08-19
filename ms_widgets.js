@@ -53,7 +53,7 @@ const siqwidgetformat = {
         "zohosalesiq": {
             "input": {
              "type": "happiness-rating",
-             "level": "8"
+             "level": "5"
            },
            "replies":[{
                "text" : "Gotcha Pork Roast",
@@ -65,7 +65,7 @@ const siqwidgetformat = {
         "zohosalesiq": {
             "input": {
               "type": "star-rating",
-              "level": "15"
+              "level": "10"
             },
             "replies":[{
                 "text" : "Ratatouille",
@@ -106,9 +106,11 @@ const siqwidgetformat = {
               "options": [
                 "Char Okakiage",
                 "Ratatouille",
-                "Mapo Curry Noodles"
+                "Mapo Curry Noodles",
+"ONE",
+                  "TWO"
               ],
-              "max_selection": "2"
+              "max_selection": "3"
             },
             "replies":[{
                 "text" : "multi select"
