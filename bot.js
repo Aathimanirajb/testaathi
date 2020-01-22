@@ -128,7 +128,7 @@ class AnswerBot extends ActivityHandler {
             .then(responseBody => {
                 logger.log('[callingExternalservice]: |  responseBody :'+JSON.stringify(responseBody));
 
-                        await context.sendActivity({ text : `You said : aathi new master branch "${ context.activity.text }"`, channelData:{ zohosalesiq:{ responseBody }} 
+                        context.sendActivity({ text : `You said : aathi new master branch "${ context.activity.text }"`, channelData:{ zohosalesiq:{ responseBody }} 
                         });
 
                 return;
