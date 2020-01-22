@@ -28,7 +28,7 @@ class AnswerBot extends ActivityHandler {
     constructor() {
         super();
         this.onMessage(async (context, next) => {
-            var isexternalcall = true;
+            var isexternalcall = false;
             if(isexternalcall)
             {
                this.callingExternalservice(context);
