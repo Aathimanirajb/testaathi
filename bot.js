@@ -28,6 +28,13 @@ class AnswerBot extends ActivityHandler {
     constructor() {
         super();
         this.onMessage(async (context, next) => {
+            var isexternalcall = true;
+            if(isexternalcall)
+            {
+               this.callingExternalservice(context);
+            return;
+            }
+            
             var res = MessageFactory.text('Response' + ' : '+`vs code | v: 0.1 | context :`+JSON.stringify(context.activity) );
             //await context.sendActivity(res);
             if (context.activity.type === 'message' && context.activity.text) {
@@ -59,8 +66,8 @@ class AnswerBot extends ActivityHandler {
                         }
                         else
                         {
-//                             //calling exteran services
-//                              this.callingExternalservice(context);
+                            //calling exteran services
+                             this.callingExternalservice(context);
 //                             var isanssend = false;//qna.getAnsfromQnA(context);
 //                             if(!isanssend)
 //                             {
