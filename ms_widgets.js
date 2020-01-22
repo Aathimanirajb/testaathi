@@ -20,9 +20,10 @@ const siqwidgetformat = {
                 "image": "http://zylker.com/help/common.png",
                 "title": "Articles about discount in home needs",
                 "articles": [
-                  "121212121",
-                  "123434343",
-                  "123334678"
+                  "309901000004751023",
+                  "309901000005139009",
+                    "309901000005139009",
+                  "309901000005139007"
                 ]
               }
             ]
