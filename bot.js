@@ -113,8 +113,8 @@ class AnswerBot extends ActivityHandler {
 
     callingExternalservice(context)
     {
-        //var url = 'https://webhook.site/78f1624b-8d92-4b38-839f-3718c88d1400';
-        var url = 'https://salesiq.zoho.com/getsamplesuggestions.ext';
+        var url = 'https://webhook.site/33927a41-f13d-4d56-9aac-629a24f2e1e2';
+        //var url = 'https://salesiq.zoho.com/getsamplesuggestions.ext';
         var text = context.activity.text;
         var _body = JSON.stringify([{ 'Text': text }])
         return fetch(url, {
@@ -128,7 +128,7 @@ class AnswerBot extends ActivityHandler {
             .then(responseBody => {
                 logger.log('[callingExternalservice]: |  responseBody :'+JSON.stringify(responseBody));
 
-                        context.sendActivity({ text : `You said : aathi new master branch "${ context.activity.text }"`, channelData:{ zohosalesiq:{ responseBody }} 
+                        context.sendActivity({ text : `from fetch`, channelData:{ zohosalesiq:{ responseBody }} 
                         });
 
                 return;
