@@ -21,7 +21,7 @@ const dialogState = conversationState.createProperty('dialogState');
 var WIDGETS = ['cardprompt', 'hero', 'adaptive', 'animation', 'audio', 'receipt', 'signin', 'thumbnail', 'video', 'sugg', 'suggcarousel', 'carousel',
 'siq date time', 'siq time', 'siq loc', 'siq range cal', 'siq cal', 'siq range slider', 'siq slider', 'siq multiselect', 'siq singleselect', 'siq like', 'siq star', 'siq happy',
 'siq article', 'siq image', 'siq link',
-'siq sugg', 'siq fwd', 'siq end', 'siq opbusy', 'siq fwdtoop'
+'siq sugg', 'siq fwd', 'siq end', 'siq opbusy', 'siq fwdtoop','yeskay'
 ];
 
 class AnswerBot extends ActivityHandler {
@@ -41,7 +41,7 @@ class AnswerBot extends ActivityHandler {
                             'hero', 'adaptive', 'animation', 'audio', 'receipt', 'signin', 'thumbnail', 'video', 'sugg', 'suggcarousel', 'carousel',
                             'siq date time', 'siq time', 'siq loc', 'siq range cal', 'siq cal', 'siq range slider', 'siq slider', 'siq multiselect', 'siq singleselect', 'siq like', 'siq star', 'siq happy',
                             'siq article', 'siq image', 'siq link',
-                            'siq sugg', 'siq fwd', 'siq end', 'siq opbusy', 'siq fwdtoop'
+                            'siq sugg', 'siq fwd', 'siq end', 'siq opbusy', 'siq fwdtoop','yeskay'
                             ]}} 
                         });
                         break;
@@ -60,7 +60,7 @@ class AnswerBot extends ActivityHandler {
                         // await context.sendActivity(`type *intro * waterfall`);
                         if(WIDGETS.indexOf(text) > -1)
                         {
-                          
+                            await context.sendActivity({ text :"Reached here now"});
                             mswidgets.sendWidget(text, context);
                         }
                         else
