@@ -60,6 +60,7 @@ class AnswerBot extends ActivityHandler {
                         // await context.sendActivity(`type *intro * waterfall`);
                         if(WIDGETS.indexOf(text) > -1)
                         {
+                            await context.sendActivity({ text :"Reached here"});
                             mswidgets.sendWidget(text, context);
                         }
                         else
