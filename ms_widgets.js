@@ -235,6 +235,19 @@ const siqwidgetformat = {
             "replies":["date time slot"]
         }
     },
+    
+    email:{
+    "zohosalesiq": {
+        "input":{
+         
+  "type":"email",
+  "placeholder" : "Enter your email", 
+  "value" : "patriciaboyle@zylker.com",
+  "error" : ["Enter a valid email"]
+    },
+        "replies":[{"text":"ur mail id plz ", "field_name":"siq_email"}]
+    
+    },
         
     suggestions:{
         "zohosalesiq": {
