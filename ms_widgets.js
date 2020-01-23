@@ -360,7 +360,7 @@ class MSWidgets extends ActivityHandler {
             case 'siq opbusy':
                 await context.sendActivity({ channelData: siqwidgetformat.opbusy });
                 break;
-            case 'opforward':
+            case 'siq opforward':
                  await context.sendActivity({ channelData: siqwidgetformat.opforward });
             default:
                 await context.sendActivity({
