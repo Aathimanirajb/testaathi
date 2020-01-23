@@ -225,25 +225,6 @@ const siqwidgetformat = {
             "replies":["date time slot"]
         }
     },
-   /* name:{
-        "zohosalesiq": {
-           "type":"name",
-            "placeholder":"What would you like to know about today ? Your name here sdf",
-            "error":{"What would you like to know about today ? Enter a valid name"
-            "replies":["text":"What would you like to know about today ? Enter your name sdfgsfdg","field_name":"siq_name"]
-        }
-    },*/
-    
-         name:{
-        "zohosalesiq": {
-            "input": {
-              "type": "name",
-                 "placeholder":"What would you like to know about today ? Your name here sdf",
-            "error":{"What would you like to know about today ? Enter a valid name"
-            },
-           "replies":["text":"What would you like to know about today ? Enter your name sdfgsfdg","field_name":"siq_name"]
-        }
-    },
         
     suggestions:{
         "zohosalesiq": {
@@ -377,9 +358,7 @@ class MSWidgets extends ActivityHandler {
            case 'siq fwdtoop':
                 await context.sendActivity({ channelData: siqwidgetformat.forwardtooperator });
                 break;
-           case 'siq name'      
-                await context.sendActivity({ channelData: siqwidgetformat.name });
-                break;
+         
             case 'siq end':
                 await context.sendActivity({ channelData: siqwidgetformat.end });
                 break;
