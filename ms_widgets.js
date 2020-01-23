@@ -225,6 +225,19 @@ const siqwidgetformat = {
             "replies":["date time slot"]
         }
     },
+    
+    email:{
+    
+    
+  "type":"email",
+  "placeholder" : "Enter your email", 
+  "value" : "patriciaboyle@zylker.com",
+  "error" : {"Enter a valid email"}
+
+    
+    
+    },
+   
     suggestions:{
         "zohosalesiq": {
             "replies":[{
@@ -360,6 +373,9 @@ class MSWidgets extends ActivityHandler {
             case 'siq opbusy':
                 await context.sendActivity({ channelData: siqwidgetformat.opbusy });
                 break;
+            case 'siq email':
+                await context.sendActivity({ channelData: siqwidgetformat.email });
+                break;    
             case 'siq opforward':
                  await context.sendActivity({ channelData: siqwidgetformat.opforward });
             default:
