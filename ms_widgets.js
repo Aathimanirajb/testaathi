@@ -31,6 +31,21 @@ const siqwidgetformat = {
             }]
          }
     },
+    redmi: {
+         "zohosalesiq": {
+             "input": {
+              "type": "select",
+              "options": [
+                "redmi note 8 pro",
+                "redmi k20 pro",
+                "redmi a3"
+              ]
+            },
+            "replies":[{
+                "text" : "Welcome to Redmi mobile phones section! What model are you looking for?"
+            }]
+         }
+    },
     yeskay : {
         "zohosalesiq": {
             "replies": [
@@ -487,6 +502,10 @@ class MSWidgets extends ActivityHandler {
                 
             case 'purchase':
                 await context.sendActivity({ channelData: siqwidgetformat.purchase });
+                break;
+                
+            case 'redmi':
+                await context.sendActivity({ channelData: siqwidgetformat.redmi });
                 break;
     
             default:
