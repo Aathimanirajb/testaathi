@@ -110,11 +110,9 @@ class AnswerBot extends ActivityHandler {
             await next();
         });
     }
-
-  callingExternalservice(context)
+callingExternalservice(context)
     {
-        //var url = 'https://webhook.site/33927a41-f13d-4d56-9aac-629a24f2e1e2';
-        var url = 'https://salesiq.zoho.com/getsamplesuggestions.ext';
+        var url = 'https://webhook.site/78f1624b-8d92-4b38-839f-3718c88d1400';
         var text = context.activity.text;
         var _body = JSON.stringify([{ 'Text': text }])
         return fetch(url, {
@@ -127,50 +125,9 @@ class AnswerBot extends ActivityHandler {
             .then(res => res.json())
             .then(responseBody => {
                 logger.log('[callingExternalservice]: |  responseBody :'+JSON.stringify(responseBody));
-
-                        context.sendActivity({ text : `from fetch`, channelData:{ zohosalesiq:{ responseBody }} 
-                        });
-
                 return;
         });
     }
-   /* callingExternalservice(context)
-    {
-        //var url = 'https://webhook.site/78f1624b-8d92-4b38-839f-3718c88d1400';
-        var url = 'https://www.zohoapis.com/crm/v2/Leads';
-        var text = context.activity.text;
-        //var _body = JSON.stringify([{ 'Text': text }])
-        var _body = {
-            "data": [
-                {
-                    "Company": "Zylker",
-                    "Last_Name": "Daly",
-                    "First_Name": "Paul",
-                    "Email": "p.daly@zylker.com",
-                    "State": "Texas"
-                }
-            ]
-        }
-
-        return fetch(url, {
-                method: 'POST',
-                body: _body,
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': 'Zoho-oauthtoken 1000.112f255c81e05572cd918330b455fc60.a85ac7343dd2f5392f3f10562c4d108f'
-                }
-            })
-            .then(res => res.json())
-            .then(responseBody => {
-                logger.log('[callingExternalservice]: |  responseBody :'+JSON.stringify(responseBody));
-
-                context.sendActivity({
-                    text : `You said : aathi new master branch "${ context.activity.text }"`
-                });
-
-                return;
-        });
-    }*/
 }
 
 module.exports.AnswerBot = AnswerBot;
