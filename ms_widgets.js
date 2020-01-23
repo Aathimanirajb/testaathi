@@ -1,6 +1,33 @@
 const { ActivityHandler, CardFactory, MessageFactory, AttachmentLayoutTypes, ActionTypes } = require('botbuilder');
 
 const siqwidgetformat = {
+    customKasi : {
+        "zohosalesiq": {
+            "replies": [
+                {
+                    "text": "Kasiviswanath Senthilkumar",
+                    "image": "https://yt3.ggpht.com/a/AGF-l79LH-Fi72eFg9tFOo43Jz2_ltlqGRfQBbfldQ=s900-c-k-c0xffffffff-no-rj-mo"
+                }
+             ]
+        }   
+    },
+    
+    yeskay : {
+        "zohosalesiq": {
+            "replies": [
+              {
+                  "text": "Kasiviswanath Senthilkumar LinkedIn profile,
+                  "type": "links",
+                  "links": [
+                    {
+                        "url":"https://in.linkedin.com/in/yeskayviswa48",
+                        "icon": "https://media-exp1.licdn.com/dms/image/C5103AQGycqu3CClspw/profile-displayphoto-shrink_200_200/0?e=1585180800&v=beta&t=h1hCUlTIP94W5k1NSVTaqqzN3lroJcTvs78QN4OZqQY",
+                        "text": "Kasiviswanath Senthilkumar LinkedIn"
+                    }
+                ]
+            }
+        }
+    },
     image : {
         "zohosalesiq": {
             "replies": [
@@ -364,6 +391,13 @@ class MSWidgets extends ActivityHandler {
                 break;
             case 'siq opbusy':
                 await context.sendActivity({ channelData: siqwidgetformat.opbusy });
+                break;
+            case 'custom Kasi':
+                await context.sendActivity({channelData: siqwidgetformat.customKasi });
+                break;
+                
+            case 'yeskay':
+                await context.sendActivity({channelData: siqwidgetformat.yeskay });
                 break;
             default:
                 await context.sendActivity({
