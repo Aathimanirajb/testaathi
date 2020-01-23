@@ -11,28 +11,6 @@ const siqwidgetformat = {
              ]
         }   
     },
-    kasiprofile : {
-        "zohosalesiq": {
-            "replies": [
-              {
-                  "text": "Kasiviswanath Senthilkumar LinkedIn profile,
-                  "type": "links",
-                  "links": [
-                    {
-                        "url":"https://in.linkedin.com/in/yeskayviswa48",
-                        "icon": "https://media-exp1.licdn.com/dms/image/C5103AQGycqu3CClspw/profile-displayphoto-shrink_200_200/0?e=1585180800&v=beta&t=h1hCUlTIP94W5k1NSVTaqqzN3lroJcTvs78QN4OZqQY",
-                        "text": "Kasiviswanath Senthilkumar LinkedIn"
-                    },
-                    {
-                        "url":"https://www.facebook.com/yeskay.viswa",
-                        "icon": "https://scontent-frt3-2.xx.fbcdn.net/v/t1.0-1/p320x320/78649483_2623234484435378_958091617577730048_o.jpg?_nc_cat=101&_nc_ohc=9JjkGkxxvyAAX9e6EFM&_nc_ht=scontent-frt3-2.xx&_nc_tp=1002&oh=05ced46a0c7bf57b64e8acf9bffbe971&oe=5E9F3B3C",
-                        "text": "Kasiviswanath Senthilkumar Facebook"
-                    }
-                ]
-            }
-        ]
-        }
-    },
     image : {
         "zohosalesiq": {
             "replies": [
@@ -417,9 +395,7 @@ class MSWidgets extends ActivityHandler {
                 await context.sendActivity({ channelData: siqwidgetformat.yeskay });
                 break;
             
-            case 'kasiprofile':
-                await context.sendActivity({ channelData: siqwidgetformat.kasiprofile });
-                break;
+            
                 
             default:
                 await context.sendActivity({
