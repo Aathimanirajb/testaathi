@@ -1,16 +1,6 @@
 const { ActivityHandler, CardFactory, MessageFactory, AttachmentLayoutTypes, ActionTypes } = require('botbuilder');
 
 const siqwidgetformat = {
-    customKasi : {
-        "zohosalesiq": {
-            "replies": [
-                {
-                    "text": "Kasiviswanath Senthilkumar",
-                    "image": "https://yt3.ggpht.com/a/AGF-l79LH-Fi72eFg9tFOo43Jz2_ltlqGRfQBbfldQ=s900-c-k-c0xffffffff-no-rj-mo"
-                }
-             ]
-        }   
-    },
     image : {
         "zohosalesiq": {
             "replies": [
@@ -19,6 +9,16 @@ const siqwidgetformat = {
                 "image": "https://media.giphy.com/media/KqYslPraZqyuQ/giphy.gif"
               }
             ]
+        }
+    },
+    customKasi: {
+        "zohosalesiq": {
+            "replies": [
+                {
+                    "text": "Kasiviswanath Senthilkumar",
+                    "image": "https://yt3.ggpht.com/a/AGF-l79LH-Fi72eFg9tFOo43Jz2_ltlqGRfQBbfldQ=s900-c-k-c0xffffffff-no-rj-mo"
+                }
+               ]
         }
     },
     article : {
@@ -378,10 +378,7 @@ class MSWidgets extends ActivityHandler {
             case 'custom Kasi':
                 await context.sendActivity({channelData: siqwidgetformat.customKasi });
                 break;
-                
-            case 'yeskay':
-                await context.sendActivity({channelData: siqwidgetformat.yeskay });
-                break;
+            
             default:
                 await context.sendActivity({
                     attachments: [
@@ -644,7 +641,7 @@ class MSWidgets extends ActivityHandler {
                     tax: '$7.50',
                     total: '$90.95',
                     buttons: CardFactory.actions([
-                        {
+                        {    
                             type: 'openUrl',
                             title: 'More information',
                             value: 'https://azure.microsoft.com/en-us/pricing/details/bot-service/'
@@ -674,7 +671,7 @@ class MSWidgets extends ActivityHandler {
                     'BotFramework Thumbnail Card',
                     [{ url: 'https://sec.ch9.ms/ch9/7ff5/e07cfef0-aa3b-40bb-9baa-7c9ef8ff7ff5/buildreactionbotframework_960.jpg' }],
                     [{
-                        type: 'openUrl',
+                        type: 'openUrl', 
                         title: 'Get started',
                         value: 'https://docs.microsoft.com/en-us/azure/bot-service/'
                     }],
