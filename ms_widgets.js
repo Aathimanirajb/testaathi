@@ -11,6 +11,17 @@ const siqwidgetformat = {
              ]
         }   
     },
+    kasiprofile:{
+        "zohosalesiq": {
+            "replies": [
+                {
+                    "text": "Beef Katsudon",
+                    "image": "https://media.giphy.com/media/KqYslPraZqyuQ/giphy.gif"
+                }
+                ]
+        }  
+    },
+    
     image : {
         "zohosalesiq": {
             "replies": [
@@ -394,9 +405,11 @@ class MSWidgets extends ActivityHandler {
             case 'yeskay':
                 await context.sendActivity({ channelData: siqwidgetformat.yeskay });
                 break;
-            
-            
                 
+            case 'kasiprofile':
+                await context.sendActivity({ channelData: siqwidgetformat.kasiprofile });
+                break;
+    
             default:
                 await context.sendActivity({
                     attachments: [
