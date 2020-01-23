@@ -15,7 +15,7 @@ const siqwidgetformat = {
         "zohosalesiq": {
             "replies": [
                 {
-                     "text": "Kasiviswanath Senthilkumar LinkedIn profile,
+                     "text": "Kasiviswanath Senthilkumar LinkedIn profile",
                   "type": "links",
                   "links": [
                     {
