@@ -15,7 +15,7 @@ const siqwidgetformat = {
         "zohosalesiq": {
             "replies": [
                 {
-                    "text": "Nothing
+                    "text": "Nothing"
                 }
                 ]
         }  
