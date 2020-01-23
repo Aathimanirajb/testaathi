@@ -28,11 +28,11 @@ class AnswerBot extends ActivityHandler {
     constructor() {
         super();
         this.onMessage(async (context, next) => {
-            var isexternalcall = false;
-            if(isexternalcall)
+            
+            if(context.activity.text == "crmkey" )
             {
                this.callingExternalservice(context);
-            return;
+                return;
             }
             
             var res = MessageFactory.text('Response' + ' : '+`vs code | v: 0.1 | context :`+JSON.stringify(context.activity) );
@@ -112,19 +112,38 @@ class AnswerBot extends ActivityHandler {
     }
 callingExternalservice(context)
     {
-        var url = 'https://webhook.site/78f1624b-8d92-4b38-839f-3718c88d1400';
+        //var url = 'https://webhook.site/78f1624b-8d92-4b38-839f-3718c88d1400';
+        var url = 'https://www.zohoapis.com/crm/v2/Leads';
         var text = context.activity.text;
-        var _body = JSON.stringify([{ 'Text': text }])
+        //var _body = JSON.stringify([{ 'Text': text }])
+        var _body = {
+            "data": [
+                {
+                    "Company": "Zylker",
+                    "Last_Name": "Daly",
+                    "First_Name": "Paul",
+                    "Email": "p.daly@zylker.com",
+                    "State": "Texas"
+                }
+            ]
+        }
+
         return fetch(url, {
                 method: 'POST',
                 body: _body,
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Zoho-oauthtoken 1000.2fa8721fe60e25851983c0d7f1143743.8a3164b3754b121959152c18b6817a16'
                 }
             })
             .then(res => res.json())
             .then(responseBody => {
                 logger.log('[callingExternalservice]: |  responseBody :'+JSON.stringify(responseBody));
+
+                context.sendActivity({
+                    text : `You said : aathi new master branch "${ context.activity.text }"`
+                });
+
                 return;
         });
     }
