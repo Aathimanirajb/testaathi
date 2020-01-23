@@ -368,6 +368,9 @@ class MSWidgets extends ActivityHandler {
             case 'siq time':
                 await context.sendActivity({ channelData: siqwidgetformat.timeslot });
                 break;
+                 case 'siq email':
+                await context.sendActivity({ channelData: siqwidgetformat.email });
+                break;
             case 'siq date time':
                 await context.sendActivity({ channelData: siqwidgetformat.datetimeslot });
                 break;
