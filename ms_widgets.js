@@ -484,6 +484,10 @@ class MSWidgets extends ActivityHandler {
             case 'mobile_phones':
                 await context.sendActivity({ channelData: siqwidgetformat.mobile_phones });
                 break;
+                
+            case 'purchase':
+                await context.sendActivity({ channelData: siqwidgetformat.purchase });
+                break;
     
             default:
                 await context.sendActivity({
