@@ -11,6 +11,16 @@ const siqwidgetformat = {
              ]
         }   
     },
+    india:{
+         "zohosalesiq": {
+              "replies": [
+                  {
+                        "text": "India",
+                        "image": "https://cdn.pixabay.com/photo/2018/08/15/07/19/indian-flag-3607410_960_720.jpg"
+                  }
+              ]
+         }
+    },
     kasiprofile:{
         "zohosalesiq": {
             "replies": [
@@ -426,18 +436,19 @@ class MSWidgets extends ActivityHandler {
                 break;
             case 'siq opbusy':
                 await context.sendActivity({ channelData: siqwidgetformat.opbusy });
-                break;
+                break;       
                 
             case 'yeskay':
                 await context.sendActivity({ channelData: siqwidgetformat.yeskay });
-                break;
-                
+                break;                
             case 'kasiprofile':
                 await context.sendActivity({ channelData: siqwidgetformat.kasiprofile });
-                break;
-                
+                break;                
             case 'countries':
                 await context.sendActivity({ channelData: siqwidgetformat.countries });
+                break;                
+            case 'india':
+                await context.sendActivity({ channelData: siqwidgetformat.india });
                 break;
     
             default:
