@@ -1,6 +1,21 @@
 const { ActivityHandler, CardFactory, MessageFactory, AttachmentLayoutTypes, ActionTypes } = require('botbuilder');
 
 const siqwidgetformat = {
+    mobile_phones: {
+         "zohosalesiq": {
+             "input": {
+              "type": "select",
+              "options": [
+                "redmi",
+                "samsung",
+                "poco"
+              ]
+            },
+            "replies":[{
+                "text" : "Welcome to mobile phones section! That's great! What brand are you looking for?"
+            }]
+         }
+    },
     yeskay : {
         "zohosalesiq": {
             "replies": [
@@ -449,6 +464,10 @@ class MSWidgets extends ActivityHandler {
                 break;                
             case 'india':
                 await context.sendActivity({ channelData: siqwidgetformat.india });
+                break;
+                
+            case 'mobile_phones':
+                await context.sendActivity({ channelData: siqwidgetformat.mobile_phones });
                 break;
     
             default:
