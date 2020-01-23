@@ -358,7 +358,7 @@ const siqwidgetformat = {
     forwardtooperator:{
         "zohosalesiq": {
             "action" : "forward",
-            "operators":["aathimaniraj.b+idc@zohocorp.com"],
+            "operators":["mailxyeskay@gmail.com"],
             "replies":["forwading to op..."]
         }
     },
