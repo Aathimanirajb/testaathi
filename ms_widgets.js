@@ -11,15 +11,6 @@ const siqwidgetformat = {
             ]
         }
     },
-    customKasi: {
-        "zohosalesiq": {
-            "replies": [
-                {
-                    "text": "Kasiviswanath Senthilkumar"
-                }
-               ]
-        }
-    },
     article : {
         "zohosalesiq": {
             "replies": [
@@ -373,9 +364,6 @@ class MSWidgets extends ActivityHandler {
                 break;
             case 'siq opbusy':
                 await context.sendActivity({ channelData: siqwidgetformat.opbusy });
-                break;
-            case 'custom kasi':
-                await context.sendActivity({channelData: siqwidgetformat.customKasi });
                 break;
             
             default:
