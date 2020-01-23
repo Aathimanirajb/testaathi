@@ -20,7 +20,7 @@ const siqwidgetformat = {
                   "links": [
                     {
                         "url":"https://in.linkedin.com/in/yeskayviswa48",
-                        "icon": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fimage.flaticon.com%2Ficons%2Fsvg%2F174%2F174857.svg&imgrefurl=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Flinkedin_174857&docid=vLBuaTBzrfpOUM&tbnid=DJlxmzNRL21gPM%3A&vet=10ahUKEwj1hPDquZnnAhVLVH0KHfyCBM0QMwhtKAAwAA..i&w=800&h=800&bih=971&biw=1680&q=linkedin%20logo&ved=0ahUKEwj1hPDquZnnAhVLVH0KHfyCBM0QMwhtKAAwAA&iact=mrc&uact=8",
+                        "icon": "https://image.flaticon.com/icons/png/512/61/61109.png",
                         "text": "Kasiviswanath Senthilkumar LinkedIn"
                     }
                 ]
