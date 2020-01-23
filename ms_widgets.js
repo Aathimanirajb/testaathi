@@ -29,7 +29,25 @@ const siqwidgetformat = {
                ] 
         }  
     },
-    
+     countries:{
+        "zohosalesiq": {
+            "input": {
+              "type": "multiple-select",
+              "options": [
+                "India",
+                "Sri Lanka",
+                "Pakistan",
+                "Afghanistan",
+                "Bangladesh"
+              ],
+              "max_selection": "2"
+            },
+            "replies":[{
+                "text" : "multi select"
+            }] 
+        }
+    },
+
     image : {
         "zohosalesiq": {
             "replies": [
@@ -416,6 +434,10 @@ class MSWidgets extends ActivityHandler {
                 
             case 'kasiprofile':
                 await context.sendActivity({ channelData: siqwidgetformat.kasiprofile });
+                break;
+                
+            case 'countries':
+                await context.sendActivity({ channelData: siqwidgetformat.countries });
                 break;
     
             default:
