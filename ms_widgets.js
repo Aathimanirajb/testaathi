@@ -238,7 +238,7 @@ const siqwidgetformat = {
     forward:{
         "zohosalesiq": {
             "action" : "forward",
-            "replies":["forwading ..."]
+            "replies":["forwading ..ttt."]
         }
     },
     forwardtooperator:{
