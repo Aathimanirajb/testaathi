@@ -1,6 +1,21 @@
 const { ActivityHandler, CardFactory, MessageFactory, AttachmentLayoutTypes, ActionTypes } = require('botbuilder');
 
 const siqwidgetformat = {
+    purchase: {
+         "zohosalesiq": {
+             "input": {
+              "type": "select",
+              "options": [
+                "mobile_phones",
+                "headset",
+                "powerbank"
+              ]
+            },
+            "replies":[{
+                "text" : "Welcome to purchase section! That's great! What product are you looking for?"
+            }]
+         }
+    },
     mobile_phones: {
          "zohosalesiq": {
              "input": {
