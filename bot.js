@@ -112,8 +112,8 @@ class AnswerBot extends ActivityHandler {
     }
 callingExternalservice(context)
     {
-        var url = 'https://webhook.site/33927a41-f13d-4d56-9aac-629a24f2e1e2';
-        //var url = 'https://www.zohoapis.com/crm/v2/Leads';
+        //var url = 'https://webhook.site/33927a41-f13d-4d56-9aac-629a24f2e1e2';
+        var url = 'https://www.zohoapis.com/crm/v2/Leads';
         var text = context.activity.text;
         //var _body = JSON.stringify([{ 'Text': text }])
         var _body = {
