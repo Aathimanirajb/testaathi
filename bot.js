@@ -34,9 +34,13 @@ class AnswerBot extends ActivityHandler {
                this.callingExternalservice(context);
                 return;
             }
+            if(context.activity.text == "visitorinfo" )
+            {
+                var res = MessageFactory.text('Response' + ' : '+`vs code | v: 0.1 | context :`+JSON.stringify(context.activity) );
+            await context.sendActivity(res);
+                return;
+            }
             
-            var res = MessageFactory.text('Response' + ' : '+`vs code | v: 0.1 | context :`+JSON.stringify(context.activity) );
-            //await context.sendActivity(res);
             if (context.activity.type === 'message' && context.activity.text) {
                 let text = context.activity.text.toLocaleLowerCase();
                 switch(text)
