@@ -43,7 +43,7 @@ const siqwidgetformat = {
               "max_selection": "2"
             },
             "replies":[{
-                "text" : "multi select"
+                "text" : "You can select a maximum of two countries"
             }] 
         }
     },
