@@ -111,7 +111,7 @@ class AnswerBot extends ActivityHandler {
         });
     }
 
-    /*callingExternalservice(context)
+  callingExternalservice(context)
     {
         //var url = 'https://webhook.site/33927a41-f13d-4d56-9aac-629a24f2e1e2';
         var url = 'https://salesiq.zoho.com/getsamplesuggestions.ext';
@@ -133,8 +133,8 @@ class AnswerBot extends ActivityHandler {
 
                 return;
         });
-    }*/
-    callingExternalservice(context)
+    }
+   /* callingExternalservice(context)
     {
         //var url = 'https://webhook.site/78f1624b-8d92-4b38-839f-3718c88d1400';
         var url = 'https://www.zohoapis.com/crm/v2/Leads';
@@ -170,7 +170,7 @@ class AnswerBot extends ActivityHandler {
 
                 return;
         });
-    }
+    }*/
 }
 
 module.exports.AnswerBot = AnswerBot;
