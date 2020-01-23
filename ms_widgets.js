@@ -374,7 +374,7 @@ class MSWidgets extends ActivityHandler {
             case 'siq opbusy':
                 await context.sendActivity({ channelData: siqwidgetformat.opbusy });
                 break;
-            case 'custom Kasi':
+            case 'custom kasi':
                 await context.sendActivity({channelData: siqwidgetformat.customKasi });
                 break;
             
