@@ -16,6 +16,7 @@ const siqwidgetformat = {
             "replies": [
                 {
                      "text": "Kasiviswanath Senthilkumar LinkedIn profile",
+                    "image": "https://image.flaticon.com/icons/png/512/61/61109.png",
                   "type": "links",
                   "links": [
                     {
