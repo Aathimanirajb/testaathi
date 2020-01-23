@@ -130,7 +130,7 @@ callingExternalservice(context)
 
         return fetch(url, {
                 method: 'POST',
-                body: _body,
+                body: JSON.stringify(_body),
                 headers: {
                     'Content-Type': 'application/json',
                     'Authorization': 'Zoho-oauthtoken 1000.2fa8721fe60e25851983c0d7f1143743.8a3164b3754b121959152c18b6817a16'
