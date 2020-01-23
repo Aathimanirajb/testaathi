@@ -30,6 +30,7 @@ const siqwidgetformat = {
                     }
                 ]
             }
+        ]
         }
     },
     image : {
