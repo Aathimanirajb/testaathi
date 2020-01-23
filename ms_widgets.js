@@ -233,7 +233,7 @@ const siqwidgetformat = {
   "type":"email",
   "placeholder" : "Enter your email", 
   "value" : "patriciaboyle@zylker.com",
-  "error" : {"Enter a valid email"}
+  "error" : ["Enter a valid email"]
     },
         "replies":[{"text":"ur mail id plz ", "field_name":"siq_email"}]
     
