@@ -44,7 +44,7 @@ const siqwidgetformat = {
             "input": {
               "type": "multiple-select",
               "options": [
-                "India",
+                "india",
                 "Sri Lanka",
                 "Pakistan",
                 "Afghanistan",
