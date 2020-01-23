@@ -240,6 +240,13 @@ const siqwidgetformat = {
             "replies":["forwading ..."]
         }
     },
+     opforward:{
+        "zohosalesiq": {
+            "action" : "forward",
+            "operators":"aathimaniraj.b+idc@zohocorp.com");
+            "replies":["forwading to operator ..."]
+        }
+    },
     end:{
         "zohosalesiq": {
             "action" : "end",
@@ -353,6 +360,8 @@ class MSWidgets extends ActivityHandler {
             case 'siq opbusy':
                 await context.sendActivity({ channelData: siqwidgetformat.opbusy });
                 break;
+            case 'opforward':
+                 await context.sendActivity({ channelData: siqwidgetformat.opforward });
             default:
                 await context.sendActivity({
                     attachments: [
