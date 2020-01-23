@@ -15,8 +15,7 @@ const siqwidgetformat = {
         "zohosalesiq": {
             "replies": [
                 {
-                    "text": "Kasiviswanath Senthilkumar",
-                    "image": "https://yt3.ggpht.com/a/AGF-l79LH-Fi72eFg9tFOo43Jz2_ltlqGRfQBbfldQ=s900-c-k-c0xffffffff-no-rj-mo"
+                    "text": "Kasiviswanath Senthilkumar"
                 }
                ]
         }
