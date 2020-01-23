@@ -1,6 +1,16 @@
 const { ActivityHandler, CardFactory, MessageFactory, AttachmentLayoutTypes, ActionTypes } = require('botbuilder');
 
 const siqwidgetformat = {
+    yeskay : {
+        "zohosalesiq": {
+            "replies": [
+                {
+                    "text": "Kasiviswanath Senthilkumar",
+                    "image": "https://yt3.ggpht.com/a/AGF-l79LH-Fi72eFg9tFOo43Jz2_ltlqGRfQBbfldQ=s900-c-k-c0xffffffff-no-rj-mo"
+                }
+             ]
+        }   
+    },
     image : {
         "zohosalesiq": {
             "replies": [
@@ -364,6 +374,10 @@ class MSWidgets extends ActivityHandler {
                 break;
             case 'siq opbusy':
                 await context.sendActivity({ channelData: siqwidgetformat.opbusy });
+                break;
+                
+            case 'yeskay':
+                await context.sendActivity({ channelData: siqwidgetformat.yeskay });
                 break;
             
             default:
