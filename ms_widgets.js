@@ -355,6 +355,12 @@ const siqwidgetformat = {
             "replies":["forwading ..ttt."]
         }
     },
+    endchat:{
+        "zohosalesiq": {
+            "action" : "end",
+            "replies":["Chat ended"]
+        }
+    },
     forwardtooperator:{
         "zohosalesiq": {
             "action" : "forward",
@@ -506,6 +512,10 @@ class MSWidgets extends ActivityHandler {
                 
             case 'redmi':
                 await context.sendActivity({ channelData: siqwidgetformat.redmi });
+                break;
+                
+            case 'endchat':
+                await context.sendActivity({ channelData: siqwidgetformat.endchat });
                 break;
     
             default:
