@@ -42,7 +42,7 @@ const siqwidgetformat = {
               "Choose your convenient date"
             ],
                 "input": {
-                  "type": "range-calendar",
+                  "type": "calendar",
                   "to": "+2",
                   "tz": true,
                   "from": "-2",
