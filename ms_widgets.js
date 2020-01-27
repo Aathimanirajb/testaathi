@@ -639,7 +639,7 @@ class MSWidgets extends ActivityHandler {
                 break;
                 
             case 'contribute':
-                await context.sendActivity("Sorry this part of the chat is still in development :P");
+                await context.sendActivity({ channelData: siqwidgetformat.contribute});
                 break;
             
             case 'about mcorp':
