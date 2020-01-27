@@ -487,9 +487,6 @@ const siqwidgetformat = {
     }
 }
 
-const logger = console;
-const da = new Date('26-Jan-2020');
-
 class MSWidgets extends ActivityHandler {
     constructor() {
         super();
@@ -644,7 +641,6 @@ class MSWidgets extends ActivityHandler {
             
             case 'about mcorp':
                 await context.sendActivity({ channelData: siqwidgetformat.about_blog});
-                logger.log("sdfsdvcsfdgsfdfcsdsz");
                 break;
             
             case 'bye':
