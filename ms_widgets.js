@@ -49,6 +49,24 @@ const siqwidgetformat = {
           }
     }, 
     
+    search_by_browsing: {
+        "zohosalesiq": {
+            "replies": [
+              {
+                "type": "links",
+                "text": "Here you go for the latest blogs",
+                "links": [
+                  {
+                    "url": "https://mcorptech.blogspot.com/p/blog-page_16.html",
+                    "text": "Mcorp - widget page",
+                    "icon": "/web/v2/mcorp/downloads/1579516037016_67431000000002045?purpose=app_logo"
+                  }
+                ]
+              }
+            ]
+        }
+    },
+    
     purchase: {
          "zohosalesiq": {
              "input": {
@@ -576,15 +594,16 @@ class MSWidgets extends ActivityHandler {
                 await context.sendActivity({ channelData: siqwidgetformat.blog_search });
                 break;
                 
+            case 'search by browsing':
+                await context.sendActivity({ channelData: siqwidgetformat.search_by_browsing });
+                break;
+                
             case 'contribute':
                 await context.sendActivity("Sorry this part of the chat is still in development :P");
                 break;
             
             case 'about mcorp':
-//                 await context.sendActivity("Sorry this part of the chat is still in development :P");
-//                 await context.sendActivity("thgydilhsod");
-                console.log("dslifudjhxouja");
-                console.log("dslifudjhxouja");
+                await context.sendActivity("Sorry this part of the chat is still in development :P");
                 break;
             
             case 'endchat':
