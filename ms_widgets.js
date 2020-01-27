@@ -1,6 +1,25 @@
 const { ActivityHandler, CardFactory, MessageFactory, AttachmentLayoutTypes, ActionTypes } = require('botbuilder');
 
 const siqwidgetformat = {
+    
+    mcorp: {
+        "zohosalesiq": {
+             "input": {
+              "type": "select",
+              "options": [
+                "Blog Search",
+                "Contribute",
+                "About Mcorp"
+              ]
+            },
+            "replies":[{
+                "text" : "Hi there! Welcome to Mcorp."
+            },
+                      {
+                "text" : "How can I help?"
+            }]
+         }
+    },
     purchase: {
          "zohosalesiq": {
              "input": {
@@ -511,6 +530,10 @@ class MSWidgets extends ActivityHandler {
                 break;
                 
             case 'redmi':
+                await context.sendActivity({ channelData: siqwidgetformat.redmi });
+                break;
+                
+            case 'Mcorp':
                 await context.sendActivity({ channelData: siqwidgetformat.redmi });
                 break;
                 
