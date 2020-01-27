@@ -44,7 +44,6 @@ const siqwidgetformat = {
                 "input": {
                   "type": "calendar",
                   "to": "0",
-                  "tz": true,
                   "label": "Choose the blog date"
             }
           }
@@ -577,6 +576,8 @@ class MSWidgets extends ActivityHandler {
                 
             case 'contribute':
                 await context.sendActivity("Sorry this part of the chat is still in development :P");
+                var datev = Date.parse('27-Jan-2020');
+                await context.sendActivity(datev);
                 break;
             
             case 'about mcorp':
