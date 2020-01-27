@@ -43,7 +43,7 @@ const siqwidgetformat = {
             ],
                 "input": {
                   "type": "calendar",
-                  "to": "0",
+                  "to": "+1",
                   "label": "Choose the blog date"
             }
           }
