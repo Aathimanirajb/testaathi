@@ -533,8 +533,8 @@ class MSWidgets extends ActivityHandler {
                 await context.sendActivity({ channelData: siqwidgetformat.redmi });
                 break;
                 
-            case 'Mcorp':
-                await context.sendActivity({ channelData: siqwidgetformat.redmi });
+            case 'mcorp':
+                await context.sendActivity({ channelData: siqwidgetformat.mcorp });
                 break;
                 
             case 'endchat':
