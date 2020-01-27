@@ -20,6 +20,38 @@ const siqwidgetformat = {
             }]
          }
     },
+    
+    blog_search:{
+        "zohosalesiq": {
+             "input": {
+              "type": "select",
+              "options": [
+                "Search by date",
+                "Search by browsing"
+              ]
+            },
+            "replies":[{
+                "text" : "How do you want to search?"
+            }]
+         }
+    },
+    
+    search_by_date: {
+        "zohosalesiq": {
+            "replies": [
+              "Choose your convenient date"
+            ],
+                "input": {
+                  "type": "range-calendar",
+                  "to": "+5",
+                  "tz": true,
+                  "from": "-5",
+                  "time": true,
+                  "label": "Schedule a meeting",
+                  "select_label": "Choose a slot"
+            }
+          }
+    }, 
     purchase: {
          "zohosalesiq": {
              "input": {
@@ -537,6 +569,22 @@ class MSWidgets extends ActivityHandler {
                 await context.sendActivity({ channelData: siqwidgetformat.mcorp });
                 break;
                 
+            case 'search by date':
+                await context.sendActivity({ channelData: siqwidgetformat.search_by_date });
+                break;
+                
+            case 'blog search':
+                await context.sendActivity({ channelData: siqwidgetformat.blog_search });
+                break;
+                
+            case 'contribute':
+                await context.sendActivity("Sorry this part of the chat is still in development :P");
+                break;
+            
+            case 'about mcorp':
+                 await context.sendActivity("Sorry this part of the chat is still in development :P");
+                break;
+            
             case 'endchat':
                 await context.sendActivity({ channelData: siqwidgetformat.endchat });
                 break;
