@@ -39,16 +39,13 @@ const siqwidgetformat = {
     search_by_date: {
         "zohosalesiq": {
             "replies": [
-              "Choose your convenient date"
+              "Choose the date the blog is from"
             ],
                 "input": {
                   "type": "calendar",
-                  "to": "+2",
+                  "to": "0",
                   "tz": true,
-                  "from": "-2",
-                  "time": true,
-                  "label": "Schedule a meeeting",
-                  "select_label": "Choose a sloot"
+                  "label": "Choose the blog date"
             }
           }
     }, 
