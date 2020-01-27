@@ -493,11 +493,7 @@ class MSWidgets extends ActivityHandler {
     }
 
     async sendWidget(type, context){
-        var isdate = Date.parse(type);
-        if(isdate != "NaN")
-        {
-            await context.sendActivity(type);
-        }
+        
         switch(type)
         {
             case 'hero':
