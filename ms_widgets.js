@@ -43,8 +43,9 @@ const siqwidgetformat = {
             ],
                 "input": {
                   "type": "calendar",
-                  "to": "+1",
-                  "label": "Choose the blog date"
+                  "to": "+0",
+                  "label": "Choose the blog date",
+                  "select_label": "Choose"
             }
           }
     }, 
@@ -84,6 +85,25 @@ const siqwidgetformat = {
             ]
         }        
     },
+    
+    contribute:{
+        "zohosalesiq": {
+            "replies": [
+              {
+                "type": "links",
+                "text": "Contribute to our blog",
+                "image": "https://previews.123rf.com/images/iqoncept/iqoncept1412/iqoncept141200021/34303037-contribute-word-in-3d-letters-pulled-up-by-a-team-working-together-for-a-donation-contribution-shari.jpg",
+                "links": [
+                  {
+                    "url": "https://mcorptech.blogspot.com/p/blog-page_16.html",
+                    "text": "Register for writiung your creative blogs here",
+                    "icon": "/web/v2/mcorp/downloads/1579516037016_67431000000002045?purpose=app_logo"
+                  }
+                ]
+              }
+            ]
+        }
+    }
     
     purchase: {
          "zohosalesiq": {
