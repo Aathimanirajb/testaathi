@@ -576,12 +576,12 @@ class MSWidgets extends ActivityHandler {
                 
             case 'contribute':
                 await context.sendActivity("Sorry this part of the chat is still in development :P");
-                var datev = Date.parse('27-Jan-2020');
+                Const datev = new Date('27-Jan-2020');
                 await context.sendActivity(datev);
                 break;
             
             case 'about mcorp':
-                 await context.sendActivity("Sorry this part of the chat is still in development :P");
+                await context.sendActivity("Sorry this part of the chat is still in development :P");
                 break;
             
             case 'endchat':
