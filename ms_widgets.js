@@ -103,7 +103,7 @@ const siqwidgetformat = {
               }
             ]
         }
-    }
+    },
     
     purchase: {
          "zohosalesiq": {
