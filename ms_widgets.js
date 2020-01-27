@@ -67,6 +67,24 @@ const siqwidgetformat = {
         }
     },
     
+    about_blog:{
+        "zohosalesiq": {
+            "replies": [
+              {
+                "type": "articles",
+                "text": "Here are your reference articles",
+                "image": "https://www.google.co.in/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=2ahUKEwju2Zb8u6PnAhWayjgGHWzPAV4QjRx6BAgBEAQ&url=https%3A%2F%2Fwww.thebalancesmb.com%2Fblogging-what-is-it-1794405&psig=AOvVaw03DIMYl1Lpcm4fKJN5fDKL&ust=1580203780537227",
+                "description": "Articles about Mcorp",
+                "articles": [
+                  "67431000000019045",
+                  "67431000000019043",
+                  "67431000000019039"
+                ]
+              }
+            ]
+        }        
+    },
+    
     purchase: {
          "zohosalesiq": {
              "input": {
@@ -82,6 +100,7 @@ const siqwidgetformat = {
             }]
          }
     },
+    
     mobile_phones: {
          "zohosalesiq": {
              "input": {
@@ -603,14 +622,11 @@ class MSWidgets extends ActivityHandler {
                 break;
             
             case 'about mcorp':
-                await context.sendActivity("Sorry this part of the chat is still in development :P");
-                break;
-            
-            case 'endchat':
-                await context.sendActivity({ channelData: siqwidgetformat.endchat });
+                await context.sendActivity({ channelData: siqwidgetformat.about_blog});
                 break;
             
             case 'bye':
+            case 'endchat':
                 await context.sendActivity({ channelData: siqwidgetformat.endchat });
                 break;
                 
