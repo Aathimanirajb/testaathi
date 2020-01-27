@@ -67,6 +67,10 @@ class AnswerBot extends ActivityHandler {
                             await context.sendActivity({ text :"Reached here now"});
                             mswidgets.sendWidget(text, context);
                         }
+                        else  if(isdate != "NaN")
+                        {
+                            await context.sendActivity({ text :"Reached here now"});
+                        }
                         else
                         {
 //                             //calling exteran services
@@ -76,10 +80,6 @@ class AnswerBot extends ActivityHandler {
 //                             {
 //                                 await dialog.run(context, dialogState);
 //                             }
-                            if(isdate != "NaN")
-                            {
-                                mswidgets.sendWidget(text, context);
-                            }
                              await context.sendActivity({ text :"sorry man"});
                         }
                 }
