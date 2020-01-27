@@ -73,7 +73,7 @@ const siqwidgetformat = {
               {
                 "type": "articles",
                 "text": "Here are your reference articles",
-                "image": "https://www.google.co.in/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=2ahUKEwju2Zb8u6PnAhWayjgGHWzPAV4QjRx6BAgBEAQ&url=https%3A%2F%2Fwww.thebalancesmb.com%2Fblogging-what-is-it-1794405&psig=AOvVaw03DIMYl1Lpcm4fKJN5fDKL&ust=1580203780537227",
+                "image": "https://www.thebalancesmb.com/thmb/9-TaSUt-qCdOp1Xh3P43mutTmeA=/2121x1414/filters:fill(auto,1)/GettyImages-887987150-5c770377c9e77c00011c82e6.jpg",
                 "description": "Articles about Mcorp",
                 "articles": [
                   "67431000000019045",
@@ -467,6 +467,7 @@ const siqwidgetformat = {
     }
 }
 
+const logger = console;
 const da = new Date('26-Jan-2020');
 
 class MSWidgets extends ActivityHandler {
@@ -623,6 +624,7 @@ class MSWidgets extends ActivityHandler {
             
             case 'about mcorp':
                 await context.sendActivity({ channelData: siqwidgetformat.about_blog});
+                logger.log("sdfsdvcsfdgsfdfcsdsz");
                 break;
             
             case 'bye':
