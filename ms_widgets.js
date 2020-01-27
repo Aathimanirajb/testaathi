@@ -581,9 +581,10 @@ class MSWidgets extends ActivityHandler {
                 break;
             
             case 'about mcorp':
-                await context.sendActivity("Sorry this part of the chat is still in development :P");
-                await context.sendActivity("thgydilhsod");
-//                 console.log(da + "dslifudjhxouja");
+//                 await context.sendActivity("Sorry this part of the chat is still in development :P");
+//                 await context.sendActivity("thgydilhsod");
+                console.log("dslifudjhxouja");
+                console.log("dslifudjhxouja");
                 break;
             
             case 'endchat':
