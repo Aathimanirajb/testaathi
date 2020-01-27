@@ -90,9 +90,6 @@ const siqwidgetformat = {
         "zohosalesiq": {
             "replies": [
               {
-                "text": "Register for writiung your creative blogs here",
-              },
-              {
                 "type": "links",
                 "image": "https://previews.123rf.com/images/iqoncept/iqoncept1412/iqoncept141200021/34303037-contribute-word-in-3d-letters-pulled-up-by-a-team-working-together-for-a-donation-contribution-shari.jpg",
                 "links": [
@@ -102,6 +99,9 @@ const siqwidgetformat = {
                     "icon": "/web/v2/mcorp/downloads/1579516037016_67431000000002045?purpose=app_logo"
                   }
                 ]
+              },
+              {
+                "text": "Register for writiung your creative blogs here",
               }
             ]
         }
