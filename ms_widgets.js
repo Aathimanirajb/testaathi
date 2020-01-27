@@ -47,11 +47,12 @@ const siqwidgetformat = {
                   "tz": true,
                   "from": "-5",
                   "time": true,
-                  "label": "Schedule a meeting",
-                  "select_label": "Choose a slot"
+                  "label": "Schedule a meeeting",
+                  "select_label": "Choose a sloot"
             }
           }
     }, 
+    
     purchase: {
          "zohosalesiq": {
              "input": {
