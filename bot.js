@@ -23,7 +23,7 @@ var WIDGETS = ['cardprompt', 'hero', 'adaptive', 'animation', 'audio', 'receipt'
 'siq article', 'siq image', 'siq link',
 'siq sugg', 'siq fwd', 'siq end', 'siq opbusy', 'siq fwdtoop','yeskay','siq email','kasiprofile','countries','india',
 'mobile_phones','purchase','redmi', 
-'mcorp', 'blog search', 'contribute', 'about mcorp',
+'mcorp', 'blog search', 'search by date', 'contribute', 'about mcorp',
 'endchat', 'bye'
 ];
 
