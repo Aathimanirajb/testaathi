@@ -69,7 +69,7 @@ class AnswerBot extends ActivityHandler {
                         }
                         else  if(isdate != "NaN")
                         {
-                            await context.sendActivity(isdate);
+                            logger.log(isdate);
                         }
                         else
                         {
