@@ -517,7 +517,11 @@ class MSWidgets extends ActivityHandler {
             case 'endchat':
                 await context.sendActivity({ channelData: siqwidgetformat.endchat });
                 break;
-    
+            
+            case 'bye':
+                await context.sendActivity({ channelData: siqwidgetformat.endchat });
+                break;
+                
             default:
                 await context.sendActivity({
                     attachments: [
