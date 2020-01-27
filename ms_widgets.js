@@ -43,9 +43,9 @@ const siqwidgetformat = {
             ],
                 "input": {
                   "type": "range-calendar",
-                  "to": "+5",
+                  "to": "+2",
                   "tz": true,
-                  "from": "-5",
+                  "from": "-2",
                   "time": true,
                   "label": "Schedule a meeeting",
                   "select_label": "Choose a sloot"
