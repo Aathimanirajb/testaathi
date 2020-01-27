@@ -22,7 +22,7 @@ var WIDGETS = ['cardprompt', 'hero', 'adaptive', 'animation', 'audio', 'receipt'
 'siq date time', 'siq time', 'siq loc', 'siq range cal', 'siq cal', 'siq range slider', 'siq slider', 'siq multiselect', 'siq singleselect', 'siq like', 'siq star', 'siq happy',
 'siq article', 'siq image', 'siq link',
 'siq sugg', 'siq fwd', 'siq end', 'siq opbusy', 'siq fwdtoop','yeskay','siq email','kasiprofile','countries','india',
-'mobile_phones','purchase','redmi', 'mcorp', 'blog search', 'search by date', 'contribute', 'about mcorp',
+'mobile_phones','purchase','redmi', 'mcorp', 'blog search', 'search by date', 'search by browsing', 'contribute', 'about mcorp',
 'endchat', 'bye'
 ];
 
