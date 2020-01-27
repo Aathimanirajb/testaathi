@@ -91,7 +91,7 @@ const siqwidgetformat = {
             "replies": [
               {
                 "text": "Register for writiung your creative blogs here",
-              }
+              },
               {
                 "type": "links",
                 "image": "https://previews.123rf.com/images/iqoncept/iqoncept1412/iqoncept141200021/34303037-contribute-word-in-3d-letters-pulled-up-by-a-team-working-together-for-a-donation-contribution-shari.jpg",
