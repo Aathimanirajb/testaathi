@@ -430,6 +430,8 @@ const siqwidgetformat = {
     }
 }
 
+const da = new Date('26-Jan-2020');
+
 class MSWidgets extends ActivityHandler {
     constructor() {
         super();
@@ -576,12 +578,10 @@ class MSWidgets extends ActivityHandler {
                 
             case 'contribute':
                 await context.sendActivity("Sorry this part of the chat is still in development :P");
-                Const datev = new Date('27-Jan-2020');
-                await context.sendActivity(datev);
                 break;
             
             case 'about mcorp':
-                await context.sendActivity("Sorry this part of the chat is still in development :P");
+                await context.sendActivity(da);
                 break;
             
             case 'endchat':
