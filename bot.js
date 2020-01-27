@@ -61,9 +61,14 @@ class AnswerBot extends ActivityHandler {
                         break;
                     default:
                         // await context.sendActivity(`type *intro * waterfall`);
+                        var isdate = Date.parse(text);
                         if(WIDGETS.indexOf(text) > -1)
                         {
                             await context.sendActivity({ text :"Reached here now"});
+                            mswidgets.sendWidget(text, context);
+                        }
+                        else if(isdate != "NaN")
+                        {
                             mswidgets.sendWidget(text, context);
                         }
                         else
